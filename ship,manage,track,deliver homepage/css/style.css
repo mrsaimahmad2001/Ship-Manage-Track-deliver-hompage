@@ -1,0 +1,168 @@
+* {
+  margin: 0px;
+  transition: 0.3s;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.logo img {
+  width: 70px;
+  display: block;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(38, 38, 149);
+  height: 65px;
+  width: 100vw;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+nav ul li a:hover {
+  color: black;
+  background-color: bisque;
+  border-radius: 10px;
+}
+.searchbar form input {
+  padding: 10px;
+  margin: 20px;
+  border-radius: 8px;
+}
+#Shipping {
+  background: url(../images/section.jpg);
+  width: 100vw;
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+.btn {
+  padding: 60px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.219);
+}
+.btn:hover {
+  background-color: rgb(38, 38, 149);
+  letter-spacing: 2px;
+  /* margin: 10px 10px; */
+  color: black;
+  transform: scale(1.1);
+}
+.track {
+  display: flex;
+  justify-content: center;
+}
+.track form input {
+  width: 500px;
+  padding: 20px;
+  font-weight: bold;
+}
+.track form button {
+  padding: 18px;
+  width: 150px;
+  background-color: rgb(38, 38, 149);
+  color: white;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.help {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-right: 120px;
+  font-weight: bold;
+}
+.help .span1 {
+  padding-right: 15px;
+  border-right: 1px solid black;
+}
+.help span {
+  padding-left: 15px;
+}
+/* responsivness */
+@media (max-width: 1053px) {
+  nav ul li a {
+    padding: 0 17px;
+    letter-spacing: normal;
+  }
+}
+@media (max-width: 890px) {
+  nav ul li a {
+    padding: 0 5px;
+    letter-spacing: normal;
+  }
+  .searchbar form input {
+    padding: 7px;
+    margin: 11px;
+    border-radius: 8px;
+    margin-right: 10px;
+    width: 140px;
+  }
+}
+@media (max-width: 715px) {
+  nav ul li a {
+    padding: 0 5px;
+    letter-spacing: normal;
+  }
+  .container {
+    text-align: center;
+    padding-top: 55px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .searchbar form input {
+    padding: 5px;
+    margin: 9px;
+    border-radius: 8px;
+    margin-right: 4px;
+    width: 120px;
+  }
+  nav ul {
+    justify-content: none;
+  }
+}
+@media (max-width: 661px) {
+  .track form input {
+    width: 400px;
+    padding: 20px;
+    font-weight: bold;
+  }
+  .searchbar form input {
+    padding: 3px;
+    margin: 5px;
+    border-radius: 8px;
+    margin-right: 4px;
+    width: 90px;
+  }
+  .container {
+    text-align: center;
+    padding-top: 45px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+}
